@@ -4,52 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treino</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-
-            background-image: url("img/capa.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            height: 100vh;
-            margin: 0;
-        }
-        p {
-            text-align: justify;
-        }
-        .exercise {
-            margin-bottom: 30px;
-        }
-        .exercise img {
-            width: 300px;
-            height: auto;
-            display: block;
-            margin: 10px 0;
-        }
-        button {
-            width: 180px;
-            background-color : #ac9be0;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            margin-top: 20px;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-    <div>
+    <div class="tituloInicial">
 
-        <h1 id = "saudacao">Treino Rose Docinho </h1>
-
+        <h1 id = "saudacao"  style="text-align: center;">Treino Rose Docinho </h1>
+        <button id ="saudacao" onclick="mudarTitulo()">Clique aqui!</button>
 
     </div>
 
@@ -77,11 +40,14 @@
             <button><b>Treino Sexta-Feira</b></button>
         </a>
         <br>
-
+    
 
     <script>
-
-
+        function mudarTitulo() {
+        var titulo = window.document.getElementById("saudacao")
+        titulo.innerText = "Minha princesa Linda!!!!!"
+        titulo.style.color = "pink"
+        }
     </script>
 
 

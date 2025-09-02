@@ -1,26 +1,33 @@
 body {
 
-            background-image: url("img/BergRose.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        text-align: justify;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 20px;
 
-            height: 100vh;
-            margin: 0;
+        background-image: url("img/BergRose.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 100vh;
+        margin: 0;
         }
         p {
             text-align: justify;
         }
 
         button {
-            background-color : #eca6d7;
-            padding: 8px 15px;
-            font-size: 14px;
-            cursor: pointer;
-            border-radius: 6px;
-            border: none;
-
+            width: 180px;
+            background-color : #ac9be0;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-top: 20px;
+            
         }
+        
         input {
             padding: 5px;
         }
@@ -30,4 +37,26 @@ body {
             padding-top: 300px;
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0,2);
+        }
+        .tituloInicial {
+            text-align: center;
+        }
+
+        .tituloInicial button {
+            margin-top: 5px;
+            background: green;
+            width: 100px;
+            height: 30px;
+        }
+
+        .exercise {
+            margin-bottom: 30px;
+
+        }
+        .exercise img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+
         }

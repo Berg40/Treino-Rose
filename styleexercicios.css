@@ -1,0 +1,25 @@
+body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #d8c2ca;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        p {
+            text-align: justify;
+        }
+
+        .exercise {
+            margin-bottom: 30px;
+        }
+        .exercise img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            
+        }
+        button {
+            background-color: rgb(235, 19, 170);
+        }
