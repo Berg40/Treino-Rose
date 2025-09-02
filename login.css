@@ -1,0 +1,43 @@
+body {
+
+        text-align: justify;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+
+        background-image: url("img/foto.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 100vh;
+        margin: 0;
+        }
+        p {
+            text-align: justify;
+        }
+
+        button {
+            width: 180px;
+            background-color : #380bbe;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-top: 20px;
+            
+        }
+        
+        input {
+            padding: 5px;
+        }
+        .container {
+            text-align: center;
+            background-color: transparent;
+            padding-top: 350px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,2);
+        }
+        .container button {
+            width: 80px;
+        }

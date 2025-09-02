@@ -28,16 +28,7 @@ body {
             
         }
         
-        input {
-            padding: 5px;
-        }
-        .container {
-            text-align: center;
-            background-color: transparent;
-            padding-top: 300px;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0,2);
-        }
+        
         .tituloInicial {
             text-align: center;
         }

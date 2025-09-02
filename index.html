@@ -4,50 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treino</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     
 </head>
 
 <body>
-    <div class="tituloInicial">
+    <div class="container">
 
-        <h1 id = "saudacao"  style="text-align: center;">Treino Rose Docinho </h1>
-        <button id ="saudacao" onclick="mudarTitulo()">Clique aqui!</button>
-
-    </div>
-
-        <hr>
-        <a href="segunda.html">
-            <button><b>Treino Segunda-Feira</b></button>
-        </a>
-        <br>
-        <a href="terca.html">
-            <button><b>Treino Terça-Feira</b></button>
-        </a>
-        <br>
-
-        <a href="quarta.html">
-            <button><b>Treino Quarta-Feira</b></button>
-        </a>
-        <br>
-
-        <a href="quinta.html">
-            <button><b>Treino Quinta-Feira</b></button>
-        </a>
-        <br>
-
-        <a href="sexta.html">
-            <button><b>Treino Sexta-Feira</b></button>
-        </a>
-        <br>
+    
+    <input type = "password" id = "senha" placeholder="Digite sua senha">
+    <button onclick="perguntarSenha()">Entrar</button>
+    
+    <script>
     
 
-    <script>
-        function mudarTitulo() {
-        var titulo = window.document.getElementById("saudacao")
-        titulo.innerText = "Minha princesa Linda!!!!!"
-        titulo.style.color = "pink"
+        function perguntarSenha() {
+
+            const senhaInput = document.getElementById("senha");
+            const senha = senhaInput.value;
+
+            if (senha === "Rosedocinho") {
+                window.location.href = "paginas.html" 
+            }
+            else if (senha === "BergeRose") {
+                window.location.href = "paginas.html"
+            }
+            else {
+                alert ("Senha incorreta! Tente Novamente.")
+                senhaInput.value = "";
+                senhaInput.focus();
+            }
+            
+
         }
+
+
     </script>
 
 
