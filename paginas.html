@@ -17,37 +17,29 @@
     </div>
 
         <hr>
-        <br><br><br><br><br><br><br><br><br><br><br>
-        <a href="segunda.html">
-            <button><b>Treino Segunda-Feira</b></button>
-        </a>
         <br>
-        <a href="terca.html">
-            <button><b>Treino Terça-Feira</b></button>
-        </a>
-        <br>
-
-        <a href="quarta.html">
-            <button><b>Treino Quarta-Feira</b></button>
-        </a>
-        <br>
-
-        <a href="quinta.html">
-            <button><b>Treino Quinta-Feira</b></button>
-        </a>
-        <br>
-
-        <a href="sexta.html">
-            <button><b>Treino Sexta-Feira</b></button>
-        </a>
-        <br>
+        
+        <select id="opcoes" onchange="opcoes()" >
+            <option>Escolha um dia </option>
+            <option value="segunda.html">Segunda-feira</option>
+            <option value="terca.html">Terca-Feira</option>
+            <option value="quarta.html">Quarta-feira</option>
+            <option value="quinta.html">Quinta-Feira</option>
+            <option value="sexta.html">Sexta-Feira</option>
+        </select>
     
-
     <script>
         function mudarTitulo() {
         var titulo = window.document.getElementById("saudacao")
         titulo.innerText = "Minha princesa Linda!!!!!"
         titulo.style.color = "pink"
+        }
+        function opcoes() {
+            let opcao = window.document.getElementById("opcoes")
+            if (opcao.value !== "") {
+                window.location.href = opcao.value;
+            } 
+
         }
     </script>
 

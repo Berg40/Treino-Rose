@@ -17,9 +17,10 @@ body {
             width: 300px;
             height: auto;
             display: block;
-            margin: 10px 0;
+            margin: auto;
             
         }
+        
         button {
             background-color: rgb(235, 19, 170);
         }
